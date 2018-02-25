@@ -1,0 +1,21 @@
+Ever wanted to track your total uploads, downloads, and overall share ratio in Deluge?
+
+Now you can!
+
+[[./ratio_screenshot.png]]
+
+The status bar format is simple:
+
+   share ratio = (total uploads / total downloads), each in gigabytes (GiB)
+
+* Preferences
+** Save download and upload totals on quit
+By default you save your download and upload totals across Deluge
+sessions.
+
+Your totals are also saved about once a minute so you shouldn't lose
+much of your totals data if Deluge or the computer suddenly crashes.
+** Reset download and totals
+If you want to start your totals from scratch, click this button.
+* TODO
+- Use a custom icon instead of gtk stock PLUS symbol.
