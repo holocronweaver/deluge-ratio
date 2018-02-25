@@ -1,4 +1,5 @@
-Ever wanted to track your total uploads, downloads, and overall share ratio in Deluge?
+Ever wanted to track your total uploads, downloads, and overall share
+ratio in Deluge?
 
 Now you can!
 
@@ -8,6 +9,16 @@ The status bar format is simple:
 
    share ratio = (total uploads / total downloads), each in gigabytes (GiB)
 
+* Installation
+Before installing, it is probably a good idea to check that you have
+the latest version of Deluge installed.
+** Installing a Release Egg (easiest)
+1. Go to [[https://github.com/holocronweaver/deluge-ratio/releases][releases]].
+2. Download the latest release egg.
+3. In Deluge go to ~Preferences -> Plugins~, click ~Install plugin~,
+   then find where you downloaded the egg and select it.
+** Build an Egg
+On Linux, clone this git repo and run ~./distribute.sh~.
 * Preferences
 ** Save download and upload totals on quit
 By default you save your download and upload totals across Deluge
@@ -17,5 +28,11 @@ Your totals are also saved about once a minute so you shouldn't lose
 much of your totals data if Deluge or the computer suddenly crashes.
 ** Reset download and totals
 If you want to start your totals from scratch, click this button.
+* Development
+On Linux, run ~./create_dev_link.sh~ which will create a link file in
+your Deluge plugins folder. This way you can work on the plugin
+without having to reinstall it to test every change.
+
+However you still have to restart Deluge to test latest changes.
 * Future
 - Use a custom icon instead of gtk stock PLUS symbol.
