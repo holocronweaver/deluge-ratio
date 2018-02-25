@@ -1,5 +1,5 @@
 Ever wanted to track your total uploads, downloads, and overall share
-ratio in Deluge?
+ratio in [[http://deluge-torrent.org/][Deluge]]?
 
 Now you can!
 
@@ -36,3 +36,5 @@ without having to reinstall it to test every change.
 However you still have to restart Deluge to test latest changes.
 * Future
 - Use a custom icon instead of gtk stock PLUS symbol.
+* License
+GPLv3, yo!
