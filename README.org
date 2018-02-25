@@ -17,5 +17,5 @@ Your totals are also saved about once a minute so you shouldn't lose
 much of your totals data if Deluge or the computer suddenly crashes.
 ** Reset download and totals
 If you want to start your totals from scratch, click this button.
-* TODO
+* Future
 - Use a custom icon instead of gtk stock PLUS symbol.
