@@ -36,5 +36,7 @@ without having to reinstall it to test every change.
 However you still have to restart Deluge to test latest changes.
 * Future
 - Use a custom icon instead of gtk stock PLUS symbol.
+- Add option to hide ratio upload/download totals.
+- Auto-adjust upload/download totals to TiB.
 * License
 GPLv3, yo!
