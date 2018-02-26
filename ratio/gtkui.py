@@ -65,9 +65,6 @@ class GtkUI(GtkPluginBase):
             'on_reset_ratio_button_clicked': self.on_reset_ratio_button_clicked
         })
 
-        # self.update_timer = LoopingCall(self.update)
-        # self.update_timer.start(1)
-
     def disable(self):
         component.get("Preferences").remove_page("Ratio")
         component.get("PluginManager").deregister_hook("on_apply_prefs", self.on_apply_prefs)
@@ -92,16 +89,9 @@ class GtkUI(GtkPluginBase):
         "Callback for on_show_prefs."
         self.glade.get_widget('persistent') \
                   .set_active(config['persistent'])
-        # self.glade.get_widget('total_upload') \
-        #           .set_text(config['total_upload'])
 
     def on_reset_ratio_button_clicked(self, widget):
         log.debug('on_reset_ratio_button_clicked')
-        # config = {
-        #     'total_download': 0,
-        #     'total_upload': 0
-        # }
-        # client.ratio.set_config(config)
         client.ratio.reset_ratio()
 
     def on_ratio_status_bar_clicked(self, widget, event):
