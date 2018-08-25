@@ -120,8 +120,8 @@ class Core(CorePluginBase):
         if self.total_download > 0:
             ratio = float(self.total_upload) / self.total_download
         return (ratio,
-                self.total_upload / 1E9,
-                self.total_download / 1E9)
+                self.total_upload / 2.0**30,
+                self.total_download / 2.0**30)
 
     @export
     def reset_ratio(self):
