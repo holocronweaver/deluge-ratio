@@ -59,7 +59,7 @@ class GtkUI(GtkPluginBase):
             #TODO: Better icon.
             stock = gtk.STOCK_ADD,
             callback = self.on_ratio_status_bar_clicked,
-            tooltip = _('Ratio = Total Downloads / Total Uploads)'))
+            tooltip = _('Ratio = Total Uploads / Total Downloads'))
 
         self.glade.signal_autoconnect({
             'on_reset_ratio_button_clicked': self.on_reset_ratio_button_clicked
